@@ -22,8 +22,10 @@ export default function RootLayout({ children }) {
           </div>
         </div> */}
 
-        <div className="max-w-6xl mx-auto">
-          <Carouselv2 images={images} />
+        <div className="relative max-w-6xl min-h-screen mx-auto">
+          <div className="absolute max-w-6xl mx-auto bottom-32">
+            <Carouselv2 images={images} />
+          </div>
         </div>
       </body>
     </html>
