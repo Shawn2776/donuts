@@ -1,4 +1,4 @@
-export const Images = [
+export const Donuts = [
   {
     id: "1",
     url: "/donuts1.png",
@@ -258,11 +258,257 @@ export const Images = [
   {
     id: "33",
     url: "/unicorn.png",
-    name: "Peach Fritter",
+    name: "Peach Fritter*",
     type: "deluxe",
     price: "1.89",
     description: "Sat-Sun Only",
   },
+  {
+    id: "34",
+    url: "/cookie_monster.png",
+    name: "Tub of Donut Holes",
+    type: "other",
+    price: "4.99",
+    description: "",
+  },
 ];
 
-export default Images;
+export const Drinks = [
+  {
+    id: "1",
+    url: "/donuts1.png",
+    name: "Chocolate Milk",
+    type: "drinks",
+    price: {
+      "12oz": "1.55",
+      "16oz": "1.85",
+    },
+    description: "",
+  },
+  {
+    id: "2",
+    url: "/donuts1.png",
+    name: "Milk",
+    type: "drinks",
+    price: {
+      "12oz": "1.45",
+      "16oz": "1.75",
+    },
+    description: "",
+  },
+  {
+    id: "3",
+    url: "/donuts1.png",
+    name: "Hot Chocolate",
+    type: "drinks",
+    price: {
+      "12oz": "2.00",
+    },
+    description: "",
+  },
+  {
+    id: "4",
+    url: "/donuts1.png",
+    name: "Water",
+    type: "Drinks",
+    price: {
+      "20oz": "1.00",
+    },
+    description: "",
+  },
+  {
+    id: "5",
+    url: "/donuts1.png",
+    name: "Coffee",
+    type: "Drinks",
+    price: {
+      "16oz": "2.00",
+    },
+    description: "",
+  },
+  {
+    id: "6",
+    url: "/donuts1.png",
+    name: "Pup Cup",
+    type: "Drinks",
+    price: {
+      "20oz": "1.00",
+    },
+    description: "",
+  },
+  {
+    id: "7",
+    url: "/donuts1.png",
+    name: "Cherry Lime",
+    type: "Flavored Sprite",
+    price: {
+      "20oz": "2.95",
+    },
+    description: "",
+  },
+  {
+    id: "8",
+    url: "/donuts1.png",
+    name: "Green Apple, Pineapple, Blue Curacao",
+    type: "Flavored Sprite",
+    price: {
+      "20oz": "2.95",
+    },
+    description: "",
+  },
+  {
+    id: "9",
+    url: "/donuts1.png",
+    name: "Blue Raspberry, Grenadine",
+    type: "Flavored Sprite",
+    price: {
+      "20oz": "2.95",
+    },
+    description: "",
+  },
+  {
+    id: "10",
+    url: "/donuts1.png",
+    name: "Sour Gummy",
+    type: "Flavored Sprite",
+    price: {
+      "20oz": "2.95",
+    },
+    description: "",
+  },
+  {
+    id: "11",
+    url: "/donuts1.png",
+    name: "Sprite",
+    type: "Flavored Sprite",
+    price: {
+      "12oz": "1.25",
+    },
+    description: "",
+  },
+  {
+    id: "12",
+    url: "/donuts1.png",
+    name: "Mango, Strawberry",
+    type: "Lemonade",
+    price: {
+      "12oz": "2.45",
+      "20oz": "2.95",
+      Blended: "+.75",
+    },
+    description: "",
+  },
+  {
+    id: "13",
+    url: "/donuts1.png",
+    name: "Green Apple, Pineapple",
+    type: "Lemonade",
+    price: {
+      "12oz": "2.45",
+      "20oz": "2.95",
+      Blended: "+.75",
+    },
+    description: "",
+  },
+  {
+    id: "14",
+    url: "/donuts1.png",
+    name: "Strawberry, Watermelon",
+    type: "Lemonade",
+    price: {
+      "12oz": "2.45",
+      "20oz": "2.95",
+      Blended: "+.75",
+    },
+    description: "",
+  },
+  {
+    id: "15",
+    url: "/donuts1.png",
+    name: "Blue Raspberry, Coconut, Pineapple",
+    type: "Lemonade",
+    price: {
+      "12oz": "2.45",
+      "20oz": "2.95",
+      Blended: "+.75",
+    },
+    description: "",
+  },
+  {
+    id: "16",
+    url: "/donuts1.png",
+    name: "Original Lemonade",
+    type: "Lemonade",
+    price: {
+      "12oz": "2.45",
+      "20oz": "2.95",
+      Blended: "+.75",
+    },
+    description: "",
+  },
+];
+
+export const Flavors = [
+  {
+    id: "1",
+    name: "Blue Curacao",
+  },
+  {
+    id: "2",
+    name: "Blue Raspberry",
+  },
+  {
+    id: "3",
+    name: "Cherry Lime",
+  },
+  {
+    id: "4",
+    name: "Coconut",
+  },
+  {
+    id: "5",
+    name: "Green Apple",
+  },
+  {
+    id: "6",
+    name: "Grenadine",
+  },
+  {
+    id: "7",
+    name: "Mango",
+  },
+  {
+    id: "8",
+    name: "Passion Fruit",
+  },
+  {
+    id: "9",
+    name: "Pineapple",
+  },
+  {
+    id: "10",
+    name: "Pomegranate",
+  },
+  {
+    id: "11",
+    name: "Raspberry",
+  },
+  {
+    id: "12",
+    name: "Strawberry",
+  },
+  {
+    id: "13",
+    name: "Sour Gummy",
+  },
+  {
+    id: "14",
+    name: "Watermelon",
+  },
+  {
+    id: "15",
+    name: "White Peach",
+  },
+];
+
+export default Donuts;
