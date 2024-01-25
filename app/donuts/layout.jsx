@@ -3,6 +3,7 @@ import Navbarz from "@/components/Navbar";
 import RightMenu from "@/components/RightMenu";
 import React from "react";
 import images from "../../data";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "Hello Donuts | Donuts",
@@ -11,19 +12,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="coffee">
+    <html lang="en" data-theme="cupcake">
       <body>
-        <Navbarz />
-        {children}
-        {/* <div className="grid max-w-6xl grid-cols-6 mx-auto">
-          <div className="col-span-4">{children}</div>
-          <div className="col-span-2">
-            <RightMenu />
-          </div>
-        </div> */}
-
-        <div className="relative max-w-6xl min-h-screen mx-auto">
-          <div className="absolute max-w-6xl mx-auto bottom-32">
+        <div className="flex flex-col h-screen">
+          <Navbar />
+          {/* Content Area */}
+          <div className="flex-grow overflow-hidden">{children}</div>
+          {/* Carousel at the Bottom */}
+          <div className="carousel-container">
             <Carouselv2 images={images} />
           </div>
         </div>

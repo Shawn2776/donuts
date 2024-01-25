@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="coffee">
+    <html lang="en" data-theme="cupcake">
       <body className={`${special.className}`}>{children}</body>
     </html>
   );

@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="min-h-screen hero bg-[url('../public/bgDonuts2.png')]">
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="text-center hero-content text-neutral-content">
-        <div className="max-w-md">
+        <div className="max-w-md text-white ">
           <h1 className="mb-5 text-5xl font-bold">
             Discover a World of Flavors
           </h1>
