@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 
@@ -206,6 +207,9 @@ const Accordion = ({ accordionInfo }) => {
               )}
           </div>
         </div>
+      </div>
+      <div>
+        <Image src="/donuts1.png" width={500} height={500} />
       </div>
     </div>
   );
