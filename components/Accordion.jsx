@@ -208,8 +208,8 @@ const Accordion = ({ accordionInfo }) => {
           </div>
         </div>
       </div>
-      <div>
-        <Image src="/donuts1.png" width={500} height={500} />
+      <div className="flex justify-center">
+        <Image src="/donuts1.png" width={175} height={175} />
       </div>
     </div>
   );
