@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RightMenu from "@/components/RightMenu";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const special = Special_Elite({
   subsets: ["latin"],
@@ -20,7 +21,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="cupcake">
-      <body className={`${special.className}`}>{children}</body>
+      <body className={`${special.className}`}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }

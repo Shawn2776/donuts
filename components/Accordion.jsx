@@ -7,13 +7,13 @@ import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 const Accordion = ({ accordionInfo }) => {
   const [isChecked, setIsChecked] = useState(1);
   const [image, setImage] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const [scrollPosition, setScrollPosition] = useState({
     classic: 0,
     deluxe: 0,
     other: 0,
   });
-  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     setIsLoaded(true);
@@ -215,7 +215,11 @@ const Accordion = ({ accordionInfo }) => {
       </div>
       <div className="flex justify-center pt-4">
         {image === null ? (
-          <div className="skeleton w-[175px] h-[175px]"></div>
+          <div className="skeleton w-[175px] h-[175px] flex justify-center text-center pt-[15%]">
+            Select a Donut
+            <br />
+            Above
+          </div>
         ) : (
           <Image
             src={image}
