@@ -25,7 +25,7 @@ const Tabs = () => {
     <div className="flex flex-col">
       <div className="flex justify-between w-full mb-1 text-2xl">
         <div
-          className={`flex justify-center w-full py-4 border rounded-md ${
+          className={`flex justify-center w-full border rounded-md ${
             isActive === "donuts" ? "bg-secondary" : ""
           }`}
           onClick={() => setIsActive("donuts")}
@@ -33,7 +33,7 @@ const Tabs = () => {
           Donuts
         </div>
         <div
-          className={`flex justify-center w-full py-4 border rounded-md ${
+          className={`flex justify-center w-full border rounded-md ${
             isActive === "donuts" ? "" : "bg-secondary"
           }`}
           onClick={() => setIsActive("drinks")}
