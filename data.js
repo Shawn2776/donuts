@@ -226,13 +226,29 @@ export const Donuts = [
   {
     id: "29",
     url: "/reeses.png",
-    name: "Raspberry, Lemon and Strawberry Filled",
+    name: "Raspberry Filled",
     type: "deluxe",
     price: "1.89",
     description: "",
   },
   {
     id: "30",
+    url: "/reeses.png",
+    name: "Lemon Filled",
+    type: "deluxe",
+    price: "1.89",
+    description: "",
+  },
+  {
+    id: "31",
+    url: "/reeses.png",
+    name: "Strawberry Filled",
+    type: "deluxe",
+    price: "1.89",
+    description: "",
+  },
+  {
+    id: "32",
     url: "/unicorn.png",
     name: "Custard",
     type: "deluxe",
@@ -240,7 +256,7 @@ export const Donuts = [
     description: "",
   },
   {
-    id: "31",
+    id: "33",
     url: "/cookie_monster.png",
     name: "Maple Bacon",
     type: "deluxe",
@@ -248,7 +264,7 @@ export const Donuts = [
     description: "",
   },
   {
-    id: "32",
+    id: "34",
     url: "/reeses.png",
     name: "Apple Fritter",
     type: "deluxe",
@@ -256,7 +272,7 @@ export const Donuts = [
     description: "",
   },
   {
-    id: "33",
+    id: "35",
     url: "/unicorn.png",
     name: "Peach Fritter*",
     type: "deluxe",
@@ -264,7 +280,7 @@ export const Donuts = [
     description: "Sat-Sun Only",
   },
   {
-    id: "34",
+    id: "36",
     url: "/cookie_monster.png",
     name: "Tub of Donut Holes",
     type: "other",

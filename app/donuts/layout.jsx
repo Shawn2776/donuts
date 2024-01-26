@@ -4,6 +4,7 @@ import RightMenu from "@/components/RightMenu";
 import React from "react";
 import images from "../../data";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Hello Donuts | Donuts",
@@ -18,11 +19,12 @@ export default function RootLayout({ children }) {
           <Navbar />
           {/* Content Area */}
           <div className="flex-grow overflow-hidden">{children}</div>
-          {/* Carousel at the Bottom */}
+          {/* Carousel at the Bottom
           <div className="carousel-container">
             <Carouselv2 images={images} />
-          </div>
+          </div> */}
         </div>
+        <Footer />
       </body>
     </html>
   );

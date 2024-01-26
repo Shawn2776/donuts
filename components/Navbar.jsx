@@ -3,7 +3,7 @@ import { GiDonut } from "react-icons/gi";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 w-full max-w-6xl mx-auto">
+    <div className="sticky top-0 z-10 w-full max-w-6xl mx-auto">
       <div className="navbar bg-base-100">
         <div className="flex-1">
           <Link className="text-xl" href="/">
