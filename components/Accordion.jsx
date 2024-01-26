@@ -6,6 +6,8 @@ import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 
 const Accordion = ({ accordionInfo }) => {
   const [isChecked, setIsChecked] = useState(1);
+  const [image, setImage] = useState(null);
+
   const [scrollPosition, setScrollPosition] = useState({
     classic: 0,
     deluxe: 0,
@@ -86,6 +88,7 @@ const Accordion = ({ accordionInfo }) => {
                 <li
                   key={image.id}
                   className="flex justify-between pl-10 pr-8 text-xl"
+                  onClick={() => setImage(image.url)}
                 >
                   <span className="name">{image.name}</span>
                   <div className="flex-grow mx-2 border-b border-dotted"></div>
@@ -136,6 +139,7 @@ const Accordion = ({ accordionInfo }) => {
                 <li
                   key={image.id}
                   className="flex justify-between pl-10 pr-8 text-xl"
+                  onClick={() => setImage(image.url)}
                 >
                   <span className="name">{image.name}</span>
                   <div className="flex-grow mx-2 border-b border-dotted"></div>
@@ -186,6 +190,7 @@ const Accordion = ({ accordionInfo }) => {
                 <li
                   key={image.id}
                   className="flex justify-between pl-10 pr-8 text-xl"
+                  onClick={() => setImage(image.url)}
                 >
                   <span className="name">{image.name}</span>
                   <div className="flex-grow mx-2 border-b border-dotted"></div>
@@ -208,8 +213,18 @@ const Accordion = ({ accordionInfo }) => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
-        <Image src="/donuts1.png" width={175} height={175} />
+      <div className="flex justify-center pt-4">
+        {image === null ? (
+          <div className="skeleton w-[175px] h-[175px]"></div>
+        ) : (
+          <Image
+            src={image}
+            alt="donut"
+            width={175}
+            height={175}
+            className="rounded-full"
+          />
+        )}
       </div>
     </div>
   );
